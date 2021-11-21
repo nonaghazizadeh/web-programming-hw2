@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Bnazanin";
+  src: url("../src/font/bnazanin.woff") format("woff"),
+    url("../src/font/bnazanin.ttf") format("truetype");
+}
+* {
+  font-family: "Bnazanin", Arial, sans-serif;
+}
 .home-area {
   background-image: linear-gradient(
       to left,
@@ -20,9 +28,86 @@
 }
 .card {
   border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-20px) scale(1.1, 1.1);
 }
 .card-header {
   border-radius: 3%;
+}
+#important-lable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 50px;
+  left: 10px;
+  top: 3px;
+  font-size: 1.3rem;
+  transform: rotateZ(-90deg);
+  background-color: #b62b48;
+  text-align: center;
+}
+.talent-item {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+  padding: 0px;
+  margin: 10px 5px;
+  display: inline-flex;
+  min-width: 20px;
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #febd3d;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.card-text:hover {
+  color: #000000 !important;
+}
+.talent-item:hover + .card-text {
+  color: #000000 !important;
+}
+.btn-social {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  border: 3px solid #febd3d;
+  border-radius: 25px;
+}
+.link-social {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.btn-social:hover > .link-social {
+  text-shadow: 0px 0px 1px #000000;
+  color: #000000;
+  text-decoration: none;
+}
+.link-social:hover {
+  text-shadow: 0px 0px 1px #000000;
+  color: #000000;
+  text-decoration: none;
 }
 .img-fluid {
   height: 100%;
