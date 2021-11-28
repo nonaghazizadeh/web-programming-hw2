@@ -67,10 +67,8 @@
   padding: 0px;
   margin: 10px 5px;
   display: inline-flex;
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   color: white;
   background-color: #febd3d;
   align-items: center;
@@ -222,4 +220,27 @@
 }
 .check-icon {
   color: rgb(41, 199, 13);
+}
+
+.imp-card .btn-social {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  padding: 15px 60px 15px 60px;
+  position: relative;
+  border: 4.5px solid #febd3d;
+  border-radius: 37.5px;
+  font-size: 1.5rem;
+}
+
+.imp-card .talent-item {
+  margin: 15px 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.imp-card .btn-social:hover > .link-social {
+  text-shadow: 0px 0px 1.5px #000000;
+  color: #000000;
+  text-decoration: none;
 }
