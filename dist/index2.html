@@ -40,13 +40,16 @@
             <div class="rounded" style="background-color:lightsteelblue;width:100px; text-align: center;">
                 <img src="../src/images/blue_logo_200x200.png" class="logo" height="50" width="50" />
             </div>
+            <div onclick="changeDisplayMode()" class="mx-4 mode-btn">
+                <img src="../src/images/mode-icon.png" height="50" width="50" />
+            </div>
         </div>
     </nav>
     <section class="bg-light text-light text-center text-md-start bg-cover position-relative home-section" id='cp'>
         <svg class="wave" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
             <g>
                 <title>Layer 1</title>
-                <path style="stroke:none; fill:white;" stroke-width="0" id="svg_5"
+                <path stroke-width="0" id="svg_5" class="svg-path"
                     d="m-40.4,407.2c195,-154 177,79 390,-4c213,-83 289,-73 402,13c113,86 208,-175 216,-163c8,12 -81,367 -81,366c0,-1 -897,-11 -896.6,-11.2c-0.4,0.2 -225.4,-46.8 -30.4,-200.8z"
                     opacity="NaN" stroke="#000" fill="#00ff7f" />
             </g>
@@ -61,8 +64,8 @@
                         <p class="text-dark my-4">
                             لورم اپیسوم متن ساختگی با تولید سادگی
                         </p>
-                        <button onclick="generate()" class="home-btn btn btn-warning btn-lg lorembtn text-light text-center fs-3 p-3 px-5 ">لورم</button>
-
+                        <button onclick="generate()"
+                            class="home-btn btn btn-warning btn-lg text-light text-center p-3 px-5 ">لورم</button>
                     </div>
                 </div>
             </div>
