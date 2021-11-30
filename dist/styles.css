@@ -1,3 +1,17 @@
+/*** Light Mode Theme ***/
+:root, [data-theme="light"] {
+  --body-bg-color: #fff;
+  --wave-color: #fff;
+  --gallery-bg-color: #e9ecef;
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  --body-bg-color: #242424;
+  --wave-color: #313131;
+  --gallery-bg-color: #313131;
+}
+
 @font-face {
   font-family: "Bnazanin";
   src: url("../src/font/bnazanin.woff") format("woff"),
@@ -8,6 +22,10 @@
   font-family: "Bnazanin", Arial, sans-serif;
 }
 
+body {
+  background-color: var(--body-bg-color);
+}
+
 .home-section {
   background-image: linear-gradient(to left,
       rgba(59, 87, 245, 0.52),
@@ -16,6 +34,11 @@
   background-size: cover;
   width: 100%;
   height: 70vh;
+}
+
+.svg-path {
+  stroke: none;
+  fill: var(--wave-color);
 }
 
 .wave {
@@ -29,7 +52,10 @@
   border-radius: 50px;
   text-align: center;
 }
-
+.mode-btn{
+  background-color: transparent;
+  cursor: pointer;
+}
 .home-text {
   padding-top: 10rem !important;
 }
@@ -43,7 +69,7 @@
 }
 
 .gallery-container {
-  background-color: #e9ecef;
+  background-color: var(--gallery-bg-color);
 }
 
 .overlay {
@@ -85,20 +111,25 @@
 .minor-card {
   background: #667ffe;
 }
+
 .prime-card {
   background: #fc6986;
 }
+
 .card {
   border-radius: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 2s ease-in-out;
 }
+
 .card:hover {
   transform: translateY(-20px) scale(1.1, 1.1);
 }
+
 .card-header {
   border-radius: 3%;
 }
+
 #important-lable {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -119,6 +150,7 @@
   background-color: #b62b48;
   text-align: center;
 }
+
 .talent-item {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -139,12 +171,15 @@
   font-weight: bold;
   border-radius: 50%;
 }
+
 .card-text:hover {
   color: #000000 !important;
 }
-.talent-item:hover + .card-text {
+
+.talent-item:hover+.card-text {
   color: #000000 !important;
 }
+
 .btn-social {
   text-decoration: none;
   color: #000000;
@@ -154,16 +189,19 @@
   border: 3px solid #febd3d;
   border-radius: 25px;
 }
+
 .link-social {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
 }
-.btn-social:hover > .link-social {
+
+.btn-social:hover>.link-social {
   text-shadow: 0px 0px 1px #000000;
   color: #000000;
   text-decoration: none;
 }
+
 .link-social:hover {
   text-shadow: 0px 0px 1px #000000;
   color: #000000;
@@ -261,6 +299,7 @@
 .check-icon {
   color: rgb(41, 199, 13);
 }
+
 .imp-card .btn-social {
   text-decoration: none;
   color: #000000;
@@ -278,7 +317,7 @@
   height: 1.5rem;
 }
 
-.imp-card .btn-social:hover > .link-social {
+.imp-card .btn-social:hover>.link-social {
   text-shadow: 0px 0px 1.5px #000000;
   color: #000000;
   text-decoration: none;
