@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
@@ -41,18 +40,21 @@
             <div class="rounded" style="background-color:lightsteelblue;width:100px; text-align: center;">
                 <img src="../src/images/blue_logo_200x200.png" class="logo" height="50" width="50" />
             </div>
+            <div onclick="changeDisplayMode()" class="mx-4 mode-btn">
+                <img src="../src/images/mode-icon.png" height="50" width="50" />
+            </div>
         </div>
     </nav>
     <section class="bg-light text-light text-center text-md-start bg-cover position-relative home-section" id='cp'>
         <svg class="wave" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
             <g>
                 <title>Layer 1</title>
-                <path style="stroke:none; fill:white;" stroke-width="0" id="svg_5"
+                <path stroke-width="0" id="svg_5" class="svg-path"
                     d="m-40.4,407.2c195,-154 177,79 390,-4c213,-83 289,-73 402,13c113,86 208,-175 216,-163c8,12 -81,367 -81,366c0,-1 -897,-11 -896.6,-11.2c-0.4,0.2 -225.4,-46.8 -30.4,-200.8z"
                     opacity="NaN" stroke="#000" fill="#00ff7f" />
             </g>
         </svg>
-        <div class="container">
+        <div class="container" style="z-index: 4;position: relative;">
             <div class="row ">
                 <div class="col-md">
                 </div>
@@ -62,9 +64,8 @@
                         <p class="text-dark my-4">
                             لورم اپیسوم متن ساختگی با تولید سادگی
                         </p>
-                        <button onclick="generate()" type="button"
-                            class="btn btn-warning btn-md text-light text-center home-btn" id="cx"
-                            type="submit">لورم</button>
+                        <button onclick="generate()"
+                            class="home-btn btn btn-warning btn-lg text-light text-center p-3 px-5 ">لورم</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +73,7 @@
     </section>
     <section>
         <br> <br> <br>
-        <h1 class="text-center">اعضای گروه</h1>
+        <h1 class="text-center card-title">اعضای گروه</h1>
         <br> <br> <br>
         <div class="container">
             <div class="row justify-content-lg-center">
@@ -90,19 +91,19 @@
                             <div class="container">
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <br>
                                 <button type="button" class="btn btn-social mx-auto d-block"
@@ -135,19 +136,19 @@
                             <div class="container" style="font-size: 1.5rem;">
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <div>
                                     <div class="talent-item text-center">&gt;</div>
-                                    <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                    <p class="card-text d-inline">ی چیزی</p>
                                 </div>
                                 <br>
                                 <button type="button"" class=" btn btn-social mx-auto d-block"
@@ -180,19 +181,19 @@
                                 <div class="container">
                                     <div class="talent-container">
                                         <div class="talent-item text-center">&gt;</div>
-                                        <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                        <p class="card-text d-inline">ی چیزی</p>
                                     </div>
                                     <div>
                                         <div class="talent-item text-center">&gt;</div>
-                                        <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                        <p class="card-text d-inline">ی چیزی</p>
                                     </div>
                                     <div>
                                         <div class="talent-item text-center">&gt;</div>
-                                        <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                        <p class="card-text d-inline">ی چیزی</p>
                                     </div>
                                     <div>
                                         <div class="talent-item text-center">&gt;</div>
-                                        <p class="card-text d-inline text-black-50">ی چیزی</p>
+                                        <p class="card-text d-inline">ی چیزی</p>
                                     </div>
                                     <br>
                                     <button type="button" class="btn btn-social mx-auto d-block"
@@ -386,8 +387,14 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
