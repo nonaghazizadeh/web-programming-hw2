@@ -33,12 +33,34 @@ body {
   background-color: var(--body-bg-color);
 }
 
+@media (max-width:767px) {
+  .wave {
+    display: none;
+  }
+
+  .home-text {
+    padding-top: 50% !important;
+  }
+}
+
+@media (min-width:767px) {
+  .wave {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .home-text {
+    padding-top: 10rem !important;
+  }
+}
+
+
 .home-section {
-  background-image: linear-gradient(
-      to left,
+  background-image: linear-gradient(to left,
       rgba(59, 87, 245, 0.52),
-      rgba(236, 62, 135, 0.73)
-    ),
+      rgba(236, 62, 135, 0.73)),
     url("../src/images/1856310.jpg");
   background-size: cover;
   width: 100%;
@@ -50,23 +72,15 @@ body {
   fill: var(--wave-color);
 }
 
-.wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .home-btn {
   width: 160px;
   border-radius: 50px;
   text-align: center;
 }
+
 .mode-btn {
   background-color: transparent;
   cursor: pointer;
-}
-.home-text {
-  padding-top: 10rem !important;
 }
 
 .bold-text {
@@ -144,6 +158,11 @@ body {
   border-radius: 3%;
 }
 
+.large-font-size {
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
 #important-lable {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -194,7 +213,7 @@ body {
   color: var(--text-color) !important;
 }
 
-.talent-item:hover + .card-text {
+.talent-item:hover+.card-text {
   color: var(--text-color) !important;
 }
 
@@ -214,7 +233,7 @@ body {
   font-weight: bold;
 }
 
-.btn-social:hover > .link-social {
+.btn-social:hover>.link-social {
   text-shadow: 0px 0px 1px var(--text-color);
   color: var(--text-color);
   text-decoration: none;
@@ -232,8 +251,6 @@ body {
   color: white;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-right: 400px;
-  padding-left: 150px;
 }
 
 .contact-container i:hover {
@@ -335,7 +352,7 @@ body {
   height: 1.5rem;
 }
 
-.imp-card .btn-social:hover > .link-social {
+.imp-card .btn-social:hover>.link-social {
   text-shadow: 0px 0px 1.5px var(--text-color);
   color: var(--text-color);
   text-decoration: none;
@@ -348,7 +365,7 @@ body {
   height: 300px;
 }
 
-.stack-parent > img {
+.stack-parent>img {
   width: 256px;
   height: 256px;
 }
