@@ -1,5 +1,15 @@
 var darkMode = false
-
+window.onload = changeContactWithScreenWidth()
+window.addEventListener("resize", changeContactWithScreenWidth)
+function changeContactWithScreenWidth() {
+    if (window.matchMedia("(min-width: 767px)").matches) {
+        document.getElementById('desktop-contact').style.display = 'block'
+        document.getElementById('mobile-contact').style.display = 'none'
+    } else {
+        document.getElementById('desktop-contact').style.display = 'none'
+        document.getElementById('mobile-contact').style.display = 'block'
+    }
+}
 function socialBtnOpen(user) {
     window.open(`https://github.com/$[user]`, `_blank`);
 }
@@ -8,7 +18,6 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 function generate() {
-    console.log('hi')
     var arr = []
     for (let i = 0; i < 6; i++) {
         arr[i] = randomIntFromInterval(1, 256);
