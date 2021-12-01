@@ -2,6 +2,7 @@ var darkMode = false
 window.onload = changeContactWithScreenWidth()
 window.addEventListener("resize", changeContactWithScreenWidth)
 function changeContactWithScreenWidth() {
+<<<<<<< HEAD
     if (window.matchMedia("(min-width: 601px)").matches) {
         document.getElementById('desktop-contact').style.display = 'block'
         document.getElementById('mobile-contact').style.display = 'none'
@@ -12,6 +13,14 @@ function changeContactWithScreenWidth() {
         document.getElementById('mobile-contact').style.display = 'block'
         document.getElementById('desktop-gallery').style.display = 'none'
         document.getElementById('mobile-gallery').style.display = 'block'
+=======
+    if (window.matchMedia("(min-width: 767px)").matches) {
+        document.getElementById('desktop-contact').style.display = 'block'
+        document.getElementById('mobile-contact').style.display = 'none'
+    } else {
+        document.getElementById('desktop-contact').style.display = 'none'
+        document.getElementById('mobile-contact').style.display = 'block'
+>>>>>>> 48476fb771219084a08c11c8f2b71bae85ea8d77
     }
 }
 function socialBtnOpen(user) {
