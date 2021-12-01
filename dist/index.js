@@ -1,5 +1,19 @@
 var darkMode = false
-
+window.onload = changeContactWithScreenWidth()
+window.addEventListener("resize", changeContactWithScreenWidth)
+function changeContactWithScreenWidth() {
+    if (window.matchMedia("(min-width: 601px)").matches) {
+        document.getElementById('desktop-contact').style.display = 'block'
+        document.getElementById('mobile-contact').style.display = 'none'
+        document.getElementById('desktop-gallery').style.display = 'block'
+        document.getElementById('mobile-gallery').style.display = 'none'
+    } else {
+        document.getElementById('desktop-contact').style.display = 'none'
+        document.getElementById('mobile-contact').style.display = 'block'
+        document.getElementById('desktop-gallery').style.display = 'none'
+        document.getElementById('mobile-gallery').style.display = 'block'
+    }
+}
 function socialBtnOpen(user) {
     window.open(`https://github.com/$[user]`, `_blank`);
 }
@@ -8,7 +22,6 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 function generate() {
-    console.log('hi')
     var arr = []
     for (let i = 0; i < 6; i++) {
         arr[i] = randomIntFromInterval(1, 256);
@@ -27,4 +40,23 @@ function changeDisplayMode() {
         document.documentElement.setAttribute('data-theme', 'dark');
         darkMode = true
     }
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
 }
