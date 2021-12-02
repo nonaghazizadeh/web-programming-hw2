@@ -60,3 +60,17 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
+var commentsIndex = 1
+showComments(commentsIndex);
+function plusSlidesComments(n){
+    showComments(commentsIndex += n);
+}
+function showComments(n) {
+    var j;
+    var commnets = document.getElementsByClassName("comments-card");
+    if (n > commnets.length) { commentsIndex = 1 }
+    if (n < 1) { commentsIndex = commnets.length }
+    for (j = 0; j < commnets.length; j++) { commnets[j].style.display = "none"; }
+    commnets[commentsIndex - 1].style.display = 'block';
+}
