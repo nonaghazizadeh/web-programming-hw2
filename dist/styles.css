@@ -117,10 +117,16 @@ body {
 }
 
 .minor-card {
+  border-radius: 10% 10% 0 0;
+  width: 100%;
+  align-self: center;
   background: #667ffe;
 }
 
 .prime-card {
+  border-radius: 3% 3% 0 0;
+  width: 100%;
+  align-self: center;
   background: #fc6986;
 }
 
@@ -345,7 +351,7 @@ body {
   position: relative;
   top: 0;
   left: 20%;
-  height: 300px;
+  min-height: 300px;
 }
 
 .stack-parent > img {
