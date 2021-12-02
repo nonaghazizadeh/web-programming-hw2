@@ -108,6 +108,26 @@ body {
 .next:hover {
   color: rgba(0, 0, 0, 0.8);
 }
+.arrow{ 
+  position: absolute;
+  color: white;
+  top: 65%;
+  background-color: #f5c026;
+  padding: 6px;
+  border-radius: 50%;
+  width:30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+
+}
+.arrow:hover{
+  color: white;
+}
+/* .right-arrow{
+  margin-right: 150px;
+} */
 
 .slides:active .overlay {
   opacity: 0.5;
@@ -188,7 +208,7 @@ body {
   color: var(--text-color);
 }
 
-.card {
+.card-parts {
   border-radius: 3%;
   background-color: var(--body-bg-color);
   box-shadow: 0 4px 8px 0 var(--card-shadow-color-prime),
@@ -196,11 +216,11 @@ body {
   transition: transform 1s ease-in-out;
 }
 
-.card:hover {
+.card-parts:hover {
   transform: translateY(-20px) scale(1.1, 1.1);
 }
 
-.card-header {
+.header-parts {
   border-radius: 3%;
 }
 
@@ -251,18 +271,22 @@ body {
   border-radius: 50%;
 }
 
-.card-text {
+.card-text-parts {
   color: rgb(127, 127, 127);
 }
 
-.card-text:hover {
+.card-text-parts:hover {
   color: var(--text-color) !important;
 }
 
-.talent-item:hover+.card-text {
+.talent-item:hover+.card-text-parts {
   color: var(--text-color) !important;
 }
-
+.comments-card{
+  background-color: var(--body-bg-color);
+  box-shadow: 0 4px 8px 0 var(--card-shadow-color-prime),
+    0 6px 20px 0 var(--card-shadow-color-secondary);
+}
 .btn-social {
   text-decoration: none;
   color: var(--text-color);
