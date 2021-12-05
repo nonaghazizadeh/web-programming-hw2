@@ -67,7 +67,7 @@ function plusSlidesComments(n) {
 }
 setInterval(function () {
     showComments(commentsIndex += 1)
-}, 2000);
+}, 5000);
 function showComments(n) {
     var j;
     var commnets = document.getElementsByClassName("comments-card");
