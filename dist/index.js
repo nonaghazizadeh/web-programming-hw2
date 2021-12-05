@@ -49,7 +49,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides");
@@ -63,9 +62,12 @@ function showSlides(n) {
 
 var commentsIndex = 1
 showComments(commentsIndex);
-function plusSlidesComments(n){
+function plusSlidesComments(n) {
     showComments(commentsIndex += n);
 }
+setInterval(function () {
+    showComments(commentsIndex += 1)
+}, 2000);
 function showComments(n) {
     var j;
     var commnets = document.getElementsByClassName("comments-card");
