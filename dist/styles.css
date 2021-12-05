@@ -126,9 +126,6 @@ body {
 .arrow:hover {
   color: white;
 }
-/* .right-arrow{
-  margin-right: 150px;
-} */
 
 .slides:active .overlay {
   opacity: 0.5;
@@ -290,6 +287,7 @@ body {
   color: var(--text-color) !important;
 }
 .comments-card {
+  color: var(--text-color) !important;
   background-color: var(--body-bg-color);
   box-shadow: 0 4px 8px 0 var(--card-shadow-color-prime),
     0 6px 20px 0 var(--card-shadow-color-secondary);
