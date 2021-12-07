@@ -59,6 +59,41 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .card-parts {
+    margin-top: 10vh;
+  }
+
+  .br-card {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+  .card-parts {
+    display: block;
+    margin-top: 10%;
+  }
+
+  h4 {
+    font-size: small;
+  }
+
+  p {
+    font-size: 0.65rem;
+  }
+  .imp-card p {
+    font-size: 0.85rem;
+  }
+  .btn-social {
+    font-size: 0.7rem;
+  }
+
+  .imp-card > .btn-social {
+    font-size: small;
+  }
+}
+
 .home-section {
   background-image: linear-gradient(
       to left,
@@ -575,7 +610,7 @@ body {
   display: flex;
   white-space: nowrap;
 }
-.comment-event{
+.comment-event {
   scroll-snap-type: x mandatory;
 }
 
