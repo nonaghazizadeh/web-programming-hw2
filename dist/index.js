@@ -25,7 +25,9 @@ function changeContactWithScreenWidth() {
 function socialBtnOpen(user) {
     window.open(`https://github.com/$[user]`, `_blank`);
 }
-
+document.getElementById('mobile-comment-container').onscroll = function(){
+    document.getElementById('mobile-comment-container').classList.remove("comment-event");
+}
 function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
