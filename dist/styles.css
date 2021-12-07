@@ -302,6 +302,7 @@ body {
   transform: rotateZ(-90deg);
   background-color: #b62b48;
   text-align: center;
+  z-index: 10;
 }
 
 .talent-item {
@@ -559,29 +560,72 @@ body {
 }
 
 .mobile-comment {
-  display: block;
+  display: flex;
   width: 100%;
-  overflow-x: scroll;
   margin-top: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .comment-slider-container {
-  display: block;
+  min-width: 70vw;
+  min-height: 60vh;
+  text-align: center;
+  overflow-x: scroll;
+  display: flex;
   white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.comment-slider-container::-webkit-scrollbar {
+  display: none;
 }
 
 .comment-card {
+  margin: auto;
+  position: relative;
   display: inline-block;
   margin-right: 10px;
+  min-width: 70vw;
+  min-height: 55vh;
+  max-height: 55vh;
   color: var(--text-color) !important;
   background-color: var(--body-bg-color);
   box-shadow: 0 4px 8px 0 var(--card-shadow-color-prime),
     0 6px 20px 0 var(--card-shadow-color-secondary);
 }
 
+.comment-text {
+  padding: 20px;
+  white-space: normal;
+  word-wrap: break-word;
+  min-height: 20vh;
+}
+
+.quote-logo {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+  position: absolute;
+  transform: translateX(50%);
+  padding: 0px;
+  margin: 10px 5px;
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  background-color: #febd3d;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
 .comment-mobile-img {
-  width: 70%;
+  width: 80%;
   height: auto;
 }
