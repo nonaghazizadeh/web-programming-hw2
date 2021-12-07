@@ -604,6 +604,7 @@ body {
   min-height: 20vh;
 }
 
+.quote-logo-desktop,
 .quote-logo {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -625,6 +626,14 @@ body {
   justify-content: center;
   font-weight: bold;
   border-radius: 50%;
+}
+
+.quote-logo-desktop {
+  right: 41.5%;
+  top: 50%;
+  width: 3vw;
+  height: 3vw;
+  font-size: larger;
 }
 
 .comment-mobile-img {
