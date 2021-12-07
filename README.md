@@ -3,3 +3,4 @@
 1. clone the project.
 2. go to dist folder.
 3. open index.html file.
+4. enjoy our workspace web!
