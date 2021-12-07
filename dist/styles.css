@@ -574,6 +574,8 @@ body {
   overflow-x: scroll;
   display: flex;
   white-space: nowrap;
+}
+.comment-event{
   scroll-snap-type: x mandatory;
 }
 
