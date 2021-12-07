@@ -26,6 +26,8 @@
 }
 
 * {
+  padding: 0;
+  margin: 0;
   font-family: "Bnazanin", Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -554,4 +556,32 @@ body {
     opacity: 1;
     z-index: 2;
   }
+}
+
+.mobile-comment {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.comment-slider-container {
+  display: block;
+  white-space: nowrap;
+}
+
+.comment-card {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--text-color) !important;
+  background-color: var(--body-bg-color);
+  box-shadow: 0 4px 8px 0 var(--card-shadow-color-prime),
+    0 6px 20px 0 var(--card-shadow-color-secondary);
+}
+
+.comment-mobile-img {
+  width: 70%;
+  height: auto;
 }

@@ -9,6 +9,8 @@ function changeContactWithScreenWidth() {
         document.getElementById('mobile-gallery').style.display = 'none'
         document.getElementById('desktop-stack').style.display = 'block'
         document.getElementById('mobile-stack').style.display = 'none'
+        document.getElementById('desktop-comment').style.display = 'flex'
+        document.getElementById('mobile-comment').style.display = 'none'
     } else {
         document.getElementById('desktop-contact').style.display = 'none'
         document.getElementById('mobile-contact').style.display = 'block'
@@ -16,6 +18,8 @@ function changeContactWithScreenWidth() {
         document.getElementById('mobile-gallery').style.display = 'block'
         document.getElementById('desktop-stack').style.display = 'none'
         document.getElementById('mobile-stack').style.display = 'block'
+        document.getElementById('desktop-comment').style.display = 'none'
+        document.getElementById('mobile-comment').style.display = 'block'
     }
 }
 function socialBtnOpen(user) {
